@@ -19,7 +19,7 @@ security:
             access-token-validity-seconds: 1800
             authorized-grant-types: password,refresh_token
             client-id: mariogneto
-            client-secret: 123
+            client-secret: x1234
             resource-ids: resources
             scope: read,write
 

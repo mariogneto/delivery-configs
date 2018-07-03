@@ -1,0 +1,46 @@
+server:
+  port: 8099
+  
+logging:
+  file: logs/spring-boot-logging.log
+  level:
+    org:
+      hibernate: ERROR
+      springframework:
+        blogs:
+          controllers: INFO
+        web: INFO
+
+spring:
+  mail:
+    host: exchange.embratelmail.com.br
+    port: 587
+    username: mario.neto@globalhitss.com.br
+    password: mvg1200H4
+    test-connection: true   
+    properties:
+      mail:
+        smtp:
+          timeout: 30000
+          auth: true
+          ssl:
+            enable: false
+          starttls:
+            enable: true
+            required: true
+      
+  data:
+    mongodb:
+      database: RevogarAcessoWaDB
+      host: localhost
+      port: 27017
+      
+ga:
+  processing: C:\\Users\\mario.gozzi\\Desktop\\RPA\\GestaoAcesso\\GA\\processing
+  error: C:\\Users\\mario.gozzi\\Desktop\\RPA\\GestaoAcesso\\GA\\error
+  input: C:\\Users\\mario.gozzi\\Desktop\\RPA\\GestaoAcesso\\GA\\input
+  output: C:\\Users\\mario.gozzi\\Desktop\\RPA\\GestaoAcesso\\GA\\output
+  excel: C:\\Program Files (x86)\\Microsoft Office\\root\\Office16\\EXCEL.EXE
+  accountmanager: C:\\Users\\mario.gozzi\\Desktop\\RPA\\GestaoAcesso\\GA\\Account Manager - 02.1_All_WA.xls
+  temp.accountmanager: C:\\Users\\mario.gozzi\\Desktop\\RPA\\GestaoAcesso\\GA\\processing\\Account Manager - 02.1_All_WA.xls
+
